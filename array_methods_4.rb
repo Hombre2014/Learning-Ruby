@@ -96,3 +96,19 @@ p colors.index("blue")
 p colors.index("red") # Returns only the first ocurance of the element.
 p colors.find_index("blue")
 p colors.index("yellow") # Returns nil
+puts
+# Select methods
+grades = [80, 95, 13, 76, 28, 39]
+matches = grades.select do |number|
+  number >= 75
+end
+p matches
+puts
+words = ["level", "selfless", "racecar", "monitor"]
+palindromes = words.select { |word| word == word.reverse }
+p palindromes
+puts
+# Reject method
+animals = ["cheetah", "cat", "lion", "elephant", "dog", "cow"]
+results = animals.reject { |e| e.include?("c") }
+p results
