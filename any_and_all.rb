@@ -133,20 +133,20 @@ end
 
 # convert_temp(32, input_scale: "fahrenheit", output_scale: "kelvin")
 
-# def factorial(a)
-#   yield(a)
-# end
-#
-# n = gets.to_i
-# factorial do
-#     puts factorial(n)  { n * factorial(n - 1)}
-# end
+def factorial(a)
+  yield(a)
+end
 
-def call_block
-    puts "Start of method."
-    yield
-    puts "End of method."
+n = gets.to_i
+factorial do
+    puts factorial(n)  { n * factorial(n - 1)}
 end
-call_block do
-    puts "I am inside call_block method."
-end
+
+# def call_block
+#     puts "Start of method."
+#     yield
+#     puts "End of method."
+# end
+# call_block do
+#     puts "I am inside call_block method."
+# end
