@@ -305,7 +305,7 @@ sentence = 'Once upon a time in a land far far far far away this time a time'
 def word_count(string)
   arr = string.split(' ')
   hash = Hash.new(0)
-  arr.each { |e| hash[e] += 1 if arr.include?(e) }
+  arr.each { |e| hash[e] += 1 }
   hash
 end
 
