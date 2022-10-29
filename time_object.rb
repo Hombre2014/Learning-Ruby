@@ -51,4 +51,46 @@ def find_day_of_year(number)
   current_date
 end
 
-p find_day_of_year(25)
+# p find_day_of_year(25)
+
+# Comparable methods
+
+birthday = Time.new(1968, 5, 12)
+summer = Time.new(1968, 6, 21)
+independence_day = Time.new(1968, 7, 4)
+winter = Time.new(1968, 12, 21)
+
+# puts birthday < summer
+# puts independence_day > winter
+#
+# puts birthday.between?(summer, winter)
+
+# Convert Time object to other object
+
+someday = Time.new(200, 2, 15)
+
+# p someday.yday
+# p someday.wday
+# p someday.mday
+# p someday.to_s
+# p someday.ctime
+# p someday.ctime.class # String
+# puts
+# p someday.to_a # an array, where: second, minutes, hour, day, month, year, day of the week and day of the year - Tuesday 46th day of the year, false (not in Day light savings time zone, EST the time zone)
+
+# Custom formatted string
+
+# strftime
+
+today = Time.now
+p today
+p today.to_s
+p today.strftime('%B %d, %Y')
+
+# parse and strptime methods
+
+require 'time'
+
+puts Time.parse('2016-01-01') # Parse a string to time object. Requires 'time'
+puts Time.parse("03-04-2000")
+puts Time.strptime("03-04-2000", "%m-%d-%Y")
