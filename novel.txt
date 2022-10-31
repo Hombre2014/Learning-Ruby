@@ -1,0 +1,7 @@
+Great American Novel
+
+This is my first novel. My name is Yuriy.
+I am writing this just to test Ruby's input and output methods.
+Working with text file.
+
+To be continue ...
