@@ -99,4 +99,4 @@ animal_farm = Book.new("Animal Farm", "George Orwell", 50)
 p animal_farm
 p animal_farm.read
 puts
-p good.read
+p good.read # The read method is available in previously defined objects, before the monkey patches the class!!!
